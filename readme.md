@@ -25,4 +25,4 @@ If anybody wants to figure out how to make this work, feel free to go nuts, I am
 
 ## License
 
-[CC0-1.0](spdx.org/licenses/CC0-1.0)
+[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html)
