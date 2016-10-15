@@ -1,0 +1,33 @@
+{
+  "name": "speed-test",
+  "description": "Reimplementation of speed-test as a webpage.",
+  "version": "1.0.0",
+  "author": "Nate Goldman <ungoldman@gmail.com> (http://ungoldman.com/)",
+  "bugs": {
+    "url": "https://github.com/ungoldman/speed-test/issues"
+  },
+  "devDependencies": {
+    "budo": "^9.2.1",
+    "choo": "^3.3.0",
+    "es2020": "^1.1.9",
+    "round-to": "^1.1.0",
+    "sheetify": "^5.1.1",
+    "speedtest-net": "^1.2.8",
+    "standard": "^8.4.0",
+    "tachyons": "^4.5.4"
+  },
+  "homepage": "https://github.com/ungoldman/speed-test#readme",
+  "license": "CC0-1.0",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungoldman/speed-test.git"
+  },
+  "scripts": {
+    "build": "curl 'localhost:8080' > 'dist/index.html'",
+    "dev": "budo index.js -p 8080 --open -- -t es2020 -t sheetify/transform",
+    "prebuild": "mkdir -p 'dist/'",
+    "test": "standard"
+  }
+}
